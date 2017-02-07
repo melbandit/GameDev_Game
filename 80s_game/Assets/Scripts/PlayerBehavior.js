@@ -36,9 +36,11 @@ function FixedUpdate () {
 //rb.velocity.x = rb.velocity.x + acceleration; //or +=acceleration
 
 	var frontFootRay:Vector3 = transform.position;
-	frontFootRay.x += 0.4;
+	frontFootRay.x += 0.5;
+	frontFootRay.y -= 1.1;
 	var backFootRay:Vector3 = transform.position;
 	backFootRay.x -= 0.3;
+	backFootRay.y -= 1.1;
 //
 	Debug.DrawRay(frontFootRay, Vector2.down * 0.01, Color.green, 1);
 	Debug.DrawRay(backFootRay, Vector2.down * 0.01, Color.red, 1);
@@ -87,8 +89,10 @@ function FixedUpdate () {
 
      //if the raycast hits something
      if (frontFootHit.collider) {
+//     	Debug.Log("change to grounded");
      	animController.SetBool("grounded", true);
      }else{
+//     	Debug.Log("change to not grounded");
      	animController.SetBool("grounded", false);
      }
 
