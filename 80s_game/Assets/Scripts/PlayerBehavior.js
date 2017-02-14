@@ -28,7 +28,7 @@ function Start () {
 
 function FixedUpdate () {
 	//if moving
-	if( rb.velocity.x ){
+	if ( Input.GetAxis("Horizontal") != 0){
      	animController.SetBool("moving", true);
 	}else{
 		animController.SetBool("moving", false);
