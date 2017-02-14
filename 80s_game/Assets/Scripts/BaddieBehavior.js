@@ -3,6 +3,7 @@
 public var leftLimiter:GameObject;
 public var rightLimiter:GameObject;
 private var sprite:SpriteRenderer;
+//public var player:GameObject;
 
 public var speed:float = 0.02;
 
@@ -33,7 +34,9 @@ function Update () {
 	}
 }
 
-function OnCollisionEnter(){
-	Debug.Log("collided");
+function OnCollisionEnter2D(other:Collision2D){
+	if(other.gameObject.tag == "Player"){
+	Debug.Log("collided with player");
+	}
 }
 
