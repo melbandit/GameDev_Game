@@ -1,18 +1,17 @@
 fileFormatVersion: 2
-guid: 260449be25a0c459095c6148adb7d20d
-timeCreated: 1487090815
+guid: 9e1eb97ab29e7443db24644ae380dc60
+timeCreated: 1487088684
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sprite_0
-    21300002: sprite_1
-    21300004: sprite_2
-    21300006: sprite_3
-    21300008: sprite_4
-    21300010: sprite_5
-    21300012: sprite_6
-    21300014: sprite_7
-    21300016: sprite_8
+    21300000: baddie_0
+    21300002: baddie_1
+    21300004: baddie_2
+    21300006: baddie_3
+    21300008: baddie_4
+    21300010: baddie_5
+    21300012: baddie_6
+    21300014: baddie_7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -45,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -87,119 +86,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_0
+      name: baddie_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 159
-        height: 185
-      alignment: 9
-      pivot: {x: 0.38960567, y: 0.5172508}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sprite_1
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 2
-        width: 212
-        height: 185
-      alignment: 9
-      pivot: {x: 0.3795697, y: 0.5345016}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sprite_2
-      rect:
-        serializedVersion: 2
-        x: 446
+        x: 1
         y: 0
-        width: 99
-        height: 187
-      alignment: 9
-      pivot: {x: 0.41940862, y: 0.54266584}
+        width: 205
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_3
+      name: baddie_1
       rect:
         serializedVersion: 2
-        x: 581
-        y: 25
-        width: 180
-        height: 162
-      alignment: 9
-      pivot: {x: 0.51773006, y: 0.49015006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sprite_4
-      rect:
-        serializedVersion: 2
-        x: 807
+        x: 250
         y: 2
-        width: 105
-        height: 185
-      alignment: 9
-      pivot: {x: 0.51519716, y: 0.5345016}
+        width: 174
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_5
+      name: baddie_2
       rect:
         serializedVersion: 2
-        x: 956
-        y: 1
-        width: 235
-        height: 185
-      alignment: 9
-      pivot: {x: 0.45246843, y: 0.5517525}
+        x: 468
+        y: 5
+        width: 161
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_6
+      name: baddie_3
       rect:
         serializedVersion: 2
-        x: 1210
-        y: 25
-        width: 198
-        height: 163
-      alignment: 9
-      pivot: {x: 0.54029495, y: 0.46084166}
+        x: 666
+        y: 4
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_7
+      name: baddie_4
       rect:
         serializedVersion: 2
-        x: 1495
-        y: 6
-        width: 121
-        height: 218
-      alignment: 9
-      pivot: {x: 0.48681238, y: 0.44144234}
+        x: 851
+        y: 5
+        width: 206
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_8
+      name: baddie_5
       rect:
         serializedVersion: 2
-        x: 1659
-        y: 0
-        width: 159
-        height: 224
-      alignment: 9
-      pivot: {x: 0.3795696, y: 0.45013443}
+        x: 1082
+        y: 5
+        width: 184
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: baddie_6
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 2
+        width: 161
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: baddie_7
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 2
+        width: 160
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

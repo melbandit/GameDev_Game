@@ -22,12 +22,18 @@ function Update () {
 //		direction = -1;
 //		sprite.flipX = true;
 //	}
-	this.transform.position.y += speed * direction;
+	this.transform.position.x += speed * direction;
 
-	if(transform.position.y < leftLimiter.transform.position.y){
+	if(transform.position.x < leftLimiter.transform.position.x){
 		direction = 1;
-	} else if(transform.position.x > rightLimiter.transform.position.y){ 
+		sprite.flipX = false;
+	} else if(transform.position.x > rightLimiter.transform.position.x){ 
 		direction = -1;
-
+		sprite.flipX = true;
 	}
 }
+
+function OnCollisionEnter(){
+	Debug.Log("collided");
+}
+
