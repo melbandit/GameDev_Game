@@ -6,6 +6,7 @@ public var spawn:GameObject;
 public var player:GameObject;
 public var force:int = 0;
 public var gui:GameObject;
+
 //end of model
 
 function Start () {
@@ -21,6 +22,9 @@ function changeScore(points:int){
 
 	Debug.Log(gui);
 
+	var guiScript:GuiView = gui.GetComponent("GuiView");
+
+	guiScript.newScore(score);
 }
 
 function pushPlayer(direction:Vector2){

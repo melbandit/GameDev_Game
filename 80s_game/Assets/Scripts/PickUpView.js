@@ -23,10 +23,11 @@ function OnTriggerEnter2D(other:Collider2D) {
 	if(other.gameObject.tag != "Player"){// if hit by somthing other than the player, ignore
 		return;
 	}
+
 	LC.changeScore(1);
 
 	collected = true;
-	Debug.Log("You Win!");
+	Debug.Log("Collected Sugar!");
 
 	Destroy(gameObject, 0.1); //distroys the coin and then waits to 
 }
