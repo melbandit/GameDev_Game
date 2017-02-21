@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9e1eb97ab29e7443db24644ae380dc60
-timeCreated: 1487088684
+timeCreated: 1487712187
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,8 @@ TextureImporter:
     21300010: baddie_5
     21300012: baddie_6
     21300014: baddie_7
+    21300016: baddie_8
+    21300018: baddie_21
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -89,12 +91,12 @@ TextureImporter:
       name: baddie_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 205
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 36
+        y: 1
+        width: 207
+        height: 162
+      alignment: 9
+      pivot: {x: 0.50852007, y: 0.510092}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -102,12 +104,12 @@ TextureImporter:
       name: baddie_1
       rect:
         serializedVersion: 2
-        x: 250
+        x: 285
         y: 2
-        width: 174
-        height: 161
+        width: 175
+        height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -115,12 +117,12 @@ TextureImporter:
       name: baddie_2
       rect:
         serializedVersion: 2
-        x: 468
-        y: 5
-        width: 161
-        height: 181
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 501
+        y: 2
+        width: 164
+        height: 182
+      alignment: 9
+      pivot: {x: 0.5326606, y: 0.432904}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -128,12 +130,12 @@ TextureImporter:
       name: baddie_3
       rect:
         serializedVersion: 2
-        x: 666
-        y: 4
-        width: 161
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 701
+        y: 2
+        width: 163
+        height: 162
+      alignment: 9
+      pivot: {x: 0.47835985, y: 0.48911324}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -141,12 +143,12 @@ TextureImporter:
       name: baddie_4
       rect:
         serializedVersion: 2
-        x: 851
-        y: 5
-        width: 206
-        height: 161
+        x: 886
+        y: 1
+        width: 208
+        height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -154,12 +156,12 @@ TextureImporter:
       name: baddie_5
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 5
-        width: 184
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1117
+        y: 1
+        width: 186
+        height: 163
+      alignment: 9
+      pivot: {x: 0.51896423, y: 0.51082003}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -167,12 +169,12 @@ TextureImporter:
       name: baddie_6
       rect:
         serializedVersion: 2
-        x: 1303
-        y: 2
-        width: 161
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1338
+        y: 1
+        width: 163
+        height: 185
+      alignment: 9
+      pivot: {x: 0.47822702, y: 0.45233327}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -180,13 +182,39 @@ TextureImporter:
       name: baddie_7
       rect:
         serializedVersion: 2
-        x: 1513
-        y: 2
-        width: 160
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1548
+        y: 1
+        width: 163
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47076786}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: baddie_8
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 3
+        width: 146
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: baddie_21
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 0
+        width: 147
+        height: 165
+      alignment: 9
+      pivot: {x: 0.50000083, y: 0.52375615}
+      border: {x: 0, y: 1, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
