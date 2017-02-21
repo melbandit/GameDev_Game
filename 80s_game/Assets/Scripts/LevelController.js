@@ -5,6 +5,7 @@ public var score:int = 0;
 public var spawn:GameObject;
 public var player:GameObject;
 public var force:int = 0;
+public var gui:GameObject;
 //end of model
 
 function Start () {
@@ -17,6 +18,9 @@ function Update () {
 
 function changeScore(points:int){
 	score += points;
+
+	Debug.Log(gui);
+
 }
 
 function pushPlayer(direction:Vector2){
