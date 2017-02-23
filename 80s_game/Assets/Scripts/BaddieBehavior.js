@@ -48,7 +48,7 @@ function OnCollisionEnter2D(other:Collision2D){
 		if (rb.velocity.y > 0.01) {
 			animController.SetBool("death", true);
 			isDead = true;
-			rigidbody2D.isKinematic = true;
+			GetComponent.<Rigidbody2D>().simulated = false;
 			//rb.simulated = true;
 			//.isKinematic = true;
 			Debug.Log("player killed baddie!");
