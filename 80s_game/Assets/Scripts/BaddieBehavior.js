@@ -19,15 +19,6 @@ function Start () {
 }
 
 function Update () {
-//	this.transform.position.x += speed * direction;
-//
-//	if(transform.position.x < leftLimiter.transform.position.x){
-//		direction = 1;
-//		sprite.flipX = false;
-//	} else if(transform.position.x > rightLimiter.transform.position.x){ 
-//		direction = -1;
-//		sprite.flipX = true;
-//	}
 
 	if (!isDead) {
 		this.transform.position.x += speed * direction;
