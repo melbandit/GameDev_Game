@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/JellyBelly Lv1.unity
+- path: Assets/Scenes/GUI-test.unity
   isLoaded: 1
   isActive: 1
