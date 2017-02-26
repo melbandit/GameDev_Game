@@ -8,10 +8,10 @@ function Update () {
 	
 }
 
-function OnTriggerEnter2D(other:Collider){
+function OnTriggerEnter2D(other:Collider2D){
 
 	if(other.gameObject.tag == "Player"){
 
-		Application.LoadLevel("ToNextLevel2");
+		Application.LoadLevel("Level2");
 	}
 }
