@@ -21,6 +21,7 @@ function Start () {
 	//rb.velocity.x = startSpeed;
 	animController = this.GetComponent(Animator);
 	//when he's grounded tell the animation controller 
+	animController.SetBool("alive", true);
 	animController.SetBool("grounded", true);
 
 	sprite = this.GetComponent(SpriteRenderer);

@@ -7,6 +7,9 @@ public var player:GameObject;
 public var force:int = 0;
 public var gui:GameObject;
 public var health:int = 100;
+public var lives:int = 3;
+
+private var animController:Animator;
 
 //end of model
 
@@ -56,4 +59,12 @@ function hurtPlayer(damage:int){
 }
 
 function killPlayer(){
+	//animController.SetBool("alive", false);
+
+	var guiScript:GuiView = gui.GetComponent("GuiView");
+	guiScript.newLessLives(lives);
+
+	health = 100;
+
+	player.transform.position = spawn.transform.position;
 }
