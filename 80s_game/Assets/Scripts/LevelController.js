@@ -71,8 +71,6 @@ function killPlayer(){
 	guiScript.newLessLives(lives);
 
 	health = 100;
-
-	var guiScript:GuiView = gui.GetComponent("GuiView");
 	guiScript.newHealth(health);
 
 	player.transform.position = spawn.transform.position;
