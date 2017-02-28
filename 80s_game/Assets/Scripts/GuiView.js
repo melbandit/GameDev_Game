@@ -20,14 +20,14 @@ function Update () {
 
 	var updateTime:int = gameDuration - Time.time;
 
-	Debug.Log(updateTime);
+//	Debug.Log(updateTime);
 
 	timeText.text = updateTime.ToString();
 
 }
 
 function newScore (score:int){
-
+	Debug.Log("new score");
 	scoreText.text = score.ToString();
 	
 }
