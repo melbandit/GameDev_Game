@@ -61,6 +61,12 @@ function hurtPlayer(damage:int){
 function killPlayer(){
 	//animController.SetBool("alive", false);
 
+	lives--;
+	if (lives == 0) {
+//		game over!
+		Application.LoadLevel("main-menu");
+	}
+
 	var guiScript:GuiView = gui.GetComponent("GuiView");
 	guiScript.newLessLives(lives);
 
