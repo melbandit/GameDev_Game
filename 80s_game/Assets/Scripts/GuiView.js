@@ -31,3 +31,9 @@ function newScore (score:int){
 	scoreText.text = score.ToString();
 	
 }
+
+function newHealth (health:int){
+	Debug.Log("new health is" + health);
+//	scoreText.text = score.ToString();
+	
+}
