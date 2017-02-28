@@ -5,6 +5,8 @@ public var rightLimiter:GameObject;
 private var sprite:SpriteRenderer;
 private var animController:Animator;
 private var rbBaddie:Rigidbody2D;
+private var LC:LevelController;
+public var damage:int = 25;
 //public var player:GameObject;
 
 public var isDead:boolean = false;
@@ -14,6 +16,8 @@ public var speed:float = 0.02;
 private var direction:int = 1; //1 right -1 left
 
 function Start () {
+	var levelControllerGameObject:GameObject = gameObject.Find("Level Controller Game Object"); //find the game object
+	LC = levelControllerGameObject.GetComponent("LevelController"); //get script from level controller game object
 	sprite = this.GetComponent(SpriteRenderer);
 	animController = this.GetComponent(Animator);
 }
@@ -40,10 +44,11 @@ function OnCollisionEnter2D(other:Collision2D){
 			animController.SetBool("death", true);
 			isDead = true;
 			GetComponent.<Rigidbody2D>().simulated = false;
-			//rb.simulated = true;
-			//.isKinematic = true;
-			Debug.Log("player killed baddie!");
+		}else{
+			direction = -direction;
+			LC.hurtPlayer(damage);
 		}
+
 	}
 }
 
