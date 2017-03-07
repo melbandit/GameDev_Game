@@ -23,6 +23,7 @@ function Start () {
 	//when he's grounded tell the animation controller 
 	animController.SetBool("alive", true);
 	animController.SetBool("grounded", true);
+	animController.SetBool("hit", false);
 
 	sprite = this.GetComponent(SpriteRenderer);
 }
@@ -98,4 +99,15 @@ function FixedUpdate () {
      }
 
 }
+
+function OnCollisionEnter2D(other:Collision2D){
+	if(other.gameObject.tag == "Baddie"){
+		var rb:Rigidbody2D = other.gameObject.GetComponent("Rigidbody2D");
+		//var rbBaddie:Rigidbody2d = 
+		animController.SetBool("hit", true);
+		yield WaitForSeconds(0.25);
+		animController.SetBool("hit", false);
+	}
+}
+//yield WaitForSeconds(5);
 //FixedUpdate() alternate to Update, can crash
