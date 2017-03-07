@@ -38,7 +38,6 @@ function pushPlayer(direction:Vector2){
 }
 
 function hurtPlayer(damage:int){
-
 	health -= damage;
 
 	var guiScript:GuiView = gui.GetComponent("GuiView");

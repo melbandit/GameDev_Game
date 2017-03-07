@@ -47,6 +47,11 @@ function OnCollisionEnter2D(other:Collision2D){
 		}else{
 			direction = -direction;
 			LC.hurtPlayer(damage);
+			if(sprite.flipX == true){
+				sprite.flipX = false;
+			} else{
+				sprite.flipX = true;
+			}
 		}
 
 	}
