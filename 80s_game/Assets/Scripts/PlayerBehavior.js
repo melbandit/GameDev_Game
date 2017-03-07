@@ -49,8 +49,8 @@ function FixedUpdate () {
 
 	//gets the position of mario
 
-	var frontFootHit:RaycastHit2D = Physics2D.Raycast( frontFootRay, Vector2.down, 0.01);
-	var backFootHit:RaycastHit2D = Physics2D.Raycast( backFootRay, Vector2.down, 0.01);
+	var frontFootHit:RaycastHit2D = Physics2D.Raycast( frontFootRay, Vector2.down, 0.03);
+	var backFootHit:RaycastHit2D = Physics2D.Raycast( backFootRay, Vector2.down, 0.03);
 
 	//Debug.Log( hit.collider);
 	//JUMP
