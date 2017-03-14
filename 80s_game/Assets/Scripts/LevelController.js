@@ -65,6 +65,7 @@ function killPlayer(){
 	if (lives == 0) {
 //		game over!
 		Application.LoadLevel("main-menu");
+
 	}
 
 	var guiScript:GuiView = gui.GetComponent("GuiView");
