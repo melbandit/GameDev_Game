@@ -15,12 +15,12 @@ function Update () {
 }
 
 function OnTriggerEnter2D(other:Collider2D) {
-	if(killed){
-		return;
-	}
+//	if(killed){
+//		return;
+//	}
 	
 	if(other.gameObject.tag == "Player"){// if hit by somthing other than the player, ignore
-		killed = true;
+		//killed = true;
 		LC.killPlayer();
 	}
 
