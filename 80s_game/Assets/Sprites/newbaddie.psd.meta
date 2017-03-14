@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: 3d25f1a8116e34260bfc813f2fa48430
+timeCreated: 1489465306
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: newbaddie_0
+    21300002: newbaddie_1
+    21300004: newbaddie_2
+    21300006: newbaddie_3
+    21300008: newbaddie_4
+    21300010: newbaddie_5
+    21300012: newbaddie_6
+    21300014: newbaddie_7
+    21300016: newbaddie_8
+    21300018: newbaddie_26
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: newbaddie_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 295
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1
+        width: 251
+        height: 233
+      alignment: 9
+      pivot: {x: 0.48316294, y: 0.4909309}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 5
+        width: 232
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44332764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_3
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 5
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_4
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 6
+        width: 297
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_5
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 5
+        width: 265
+        height: 233
+      alignment: 9
+      pivot: {x: 0.555817, y: 0.49093106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_6
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 2
+        width: 233
+        height: 264
+      alignment: 9
+      pivot: {x: 0.49093118, y: 0.45997968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_7
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2
+        width: 231
+        height: 259
+      alignment: 9
+      pivot: {x: 0.49085265, y: 0.4673657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_8
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 18
+        width: 210
+        height: 229
+      alignment: 9
+      pivot: {x: 0.51237327, y: 0.505322}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: newbaddie_26
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 19
+        width: 208
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.89775294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
