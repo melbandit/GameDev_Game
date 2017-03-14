@@ -58,6 +58,10 @@ function FixedUpdate () {
 	if ( !alreadyJumped && Input.GetAxis("Vertical") > 0 && (frontFootHit.collider || backFootHit.collider)){
 		rb.velocity.y = jumpHeight;
 		alreadyJumped = true;
+
+		//Jump sound
+		var audio: AudioSource = GetComponent.<AudioSource>();
+		audio.Play();
 	}
 	if ( Input.GetAxis("Vertical") == 0 ){
 		alreadyJumped = false;
