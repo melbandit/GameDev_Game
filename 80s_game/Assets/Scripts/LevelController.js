@@ -14,8 +14,8 @@ private var animController:Animator;
 
 //end of model
 
-function Start () {
-	
+function Awake () {
+	player.transform.position = spawn.transform.position;
 }
 
 function Update () {

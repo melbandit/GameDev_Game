@@ -62,6 +62,7 @@ function FixedUpdate () {
 	if ( Input.GetAxis("Vertical") == 0 ){
 		alreadyJumped = false;
 	}
+
 	//right
 	if ( Input.GetAxis("Horizontal") > 0){
 		//Debug.Log("right/left");
@@ -83,20 +84,10 @@ function FixedUpdate () {
 				rb.velocity.x = rb.velocity.x - airAcceleration;
 			}
 		}
-	}
-
-	//math.abs
-//	if ( Input.GetAxis("Vertical") > 0 && backFootHit.collider){
-//		Debug.Log("Jump!");
-//		rb.velocity.y = jumpHeight;
+	} 
+//else{
+//		rb.velocity.x =
 //	}
-////
-//	if(rb.velocity.x < maxSpeed)
-//     {
-////        rb.velocity = rb.velocity.normalized * maxSpeed;
-////		rb.velocity.x = rb.velocity.x + acceleration;
-//     }
-     //Debug.Log(rb.velocity.x);
 
      //if the raycast hits something
      if (frontFootHit.collider) {
