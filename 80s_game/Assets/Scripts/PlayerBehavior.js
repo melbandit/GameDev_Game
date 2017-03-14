@@ -13,6 +13,9 @@ public var airAcceleration:float = 0.1;
 public var startSpeed:float = 2;
 public var maxSpeed:float = 5;
 
+private var jump:AudioSource;
+private var die:AudioSource;
+private var hurt:AudioSource;
 
 function Start () {
 //change the players position
@@ -27,6 +30,11 @@ function Start () {
 	animController.SetBool("hit", false);
 
 	sprite = this.GetComponent(SpriteRenderer);
+
+	var aSources = GetComponents(AudioSource); 
+	jump = aSources[0]; //Jump
+	die = aSources[1]; //Die
+	hurt = aSources[2]; //Hurt
 }
 
 function FixedUpdate () {
@@ -60,8 +68,7 @@ function FixedUpdate () {
 		alreadyJumped = true;
 
 		//Jump sound
-		var audio: AudioSource = GetComponent.<AudioSource>();
-		audio.Play();
+		jump.Play();
 	}
 	if ( Input.GetAxis("Vertical") == 0 ){
 		alreadyJumped = false;
@@ -111,6 +118,7 @@ function OnCollisionEnter2D(other:Collision2D){
 		animController.SetBool("hit", true);
 		yield WaitForSeconds(0.25);
 		animController.SetBool("hit", false);
+		hurt.Play();
 	}
 }
 //yield WaitForSeconds(5);
