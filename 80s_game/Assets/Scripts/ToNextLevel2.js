@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 public var level:int = 1;
+
 function Start () {
 	
 }
