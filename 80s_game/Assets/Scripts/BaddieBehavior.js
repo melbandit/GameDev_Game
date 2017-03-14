@@ -44,6 +44,10 @@ function OnCollisionEnter2D(other:Collision2D){
 			animController.SetBool("death", true);
 			isDead = true;
 			GetComponent.<Rigidbody2D>().simulated = false;
+
+			//Baddy Death Sound 
+			var audio: AudioSource = GetComponent.<AudioSource>();
+			audio.Play();
 		}else{
 			direction = -direction;
 			LC.hurtPlayer(damage);
