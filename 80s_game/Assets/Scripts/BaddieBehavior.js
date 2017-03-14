@@ -37,6 +37,7 @@ function Update () {
 }
 function OnCollisionEnter2D(other:Collision2D){
 	if(other.gameObject.tag == "Player"){
+//		Debug.Log("baddie hit by player");
 		var rb:Rigidbody2D = other.gameObject.GetComponent("Rigidbody2D");
 		//var rbBaddie:Rigidbody2d = 
 //		Debug.Log(rb.velocity.y);

@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 private var rb:Rigidbody2D;
+private var LC:LevelController;
 private var animController:Animator; //animatino controller to get the jump
 private var sprite:SpriteRenderer;
 private var alreadyJumped:boolean = false;
@@ -17,7 +18,10 @@ private var jump:AudioSource;
 private var hurt:AudioSource;
 
 function Start () {
-//change the players position
+	var levelControllerGameObject:GameObject = gameObject.Find("Level Controller Game Object"); //find the game object
+	LC = levelControllerGameObject.GetComponent("LevelController"); //get script from level controller game object
+
+	//change the players position
 	rb = gameObject.GetComponent(Rigidbody2D);
 	//leftLimiter = gameObject.GetComponent(Rigidbody2D);
 	//Debug.Log("Hate this headache");
@@ -111,12 +115,13 @@ function FixedUpdate () {
 
 function OnCollisionEnter2D(other:Collision2D){
 	if(other.gameObject.tag == "Baddie"){
+//		Debug.Log("player hit by baddie");
 		var rb:Rigidbody2D = other.gameObject.GetComponent("Rigidbody2D");
 		//var rbBaddie:Rigidbody2d = 
 		animController.SetBool("hit", true);
 		yield WaitForSeconds(0.25);
 		animController.SetBool("hit", false);
-		hurt.Play();
+
 	}
 }
 //yield WaitForSeconds(5);

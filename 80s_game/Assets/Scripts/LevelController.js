@@ -57,6 +57,10 @@ function hurtPlayer(damage:int){
 		killPlayer();
 		//hurtplayer.Stop();
 		die.Play();
+
+	} else {
+		// play hurt sound
+		hurtplayer.Play();
 	}
 }
 
