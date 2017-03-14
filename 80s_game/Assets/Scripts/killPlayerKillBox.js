@@ -25,6 +25,4 @@ function OnTriggerEnter2D(other:Collider2D) {
 	}
 
 	Debug.Log("died!");
-
-	Destroy(gameObject); //distroys the coin and then waits to 
 }
