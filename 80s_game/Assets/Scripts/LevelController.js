@@ -4,6 +4,7 @@
 public var score:int = 0;
 public var spawn:GameObject;
 public var player:GameObject;
+public var killbox:GameObject;
 public var force:int = 0;
 public var gui:GameObject;
 public var health:int = 100;
