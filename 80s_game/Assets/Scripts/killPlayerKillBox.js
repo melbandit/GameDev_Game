@@ -1,7 +1,5 @@
 ﻿#pragma strict
 
-private var killed:boolean = false;
-
 private var LC:LevelController;
 
 function Start () {
@@ -15,14 +13,9 @@ function Update () {
 }
 
 function OnTriggerEnter2D(other:Collider2D) {
-//	if(killed){
-//		return;
-//	}
-	
 	if(other.gameObject.tag == "Player"){// if hit by somthing other than the player, ignore
-		//killed = true;
+
 		LC.killPlayer();
 	}
-
 	Debug.Log("died!");
 }
