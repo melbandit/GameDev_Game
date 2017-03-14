@@ -25,7 +25,8 @@ function OnTriggerEnter2D(other:Collider2D) {
 	}
 
 	LC.changeScore(1);
-
+	var audio: AudioSource = GetComponent.<AudioSource>();
+	audio.Play();
 	collected = true;
 	Debug.Log("Collected Sugar!");
 
