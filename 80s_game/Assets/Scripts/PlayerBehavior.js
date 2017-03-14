@@ -9,6 +9,7 @@ private var alreadyJumped:boolean = false;
 
 public var jumpHeight:int = 10;
 public var acceleration:float = 0.1;
+public var airAcceleration:float = 0.1;
 public var startSpeed:float = 2;
 public var maxSpeed:float = 5;
 
@@ -66,13 +67,21 @@ function FixedUpdate () {
 		//Debug.Log("right/left");
 		sprite.flipX = false;
 		if (rb.velocity.x < maxSpeed){
-			rb.velocity.x = rb.velocity.x + acceleration;
+			if(frontFootHit.collider || backFootHit.collider){
+				rb.velocity.x = rb.velocity.x + acceleration;
+			} else{
+				rb.velocity.x = rb.velocity.x + airAcceleration;
+			}
 		}
 	} else if ( Input.GetAxis("Horizontal") < 0){//left
 		//Debug.Log("right/left");
 		sprite.flipX = true;
 		if (rb.velocity.x > -maxSpeed){
-			rb.velocity.x = rb.velocity.x - acceleration;
+			if(frontFootHit.collider || backFootHit.collider){
+				rb.velocity.x = rb.velocity.x - acceleration;
+			}else{
+				rb.velocity.x = rb.velocity.x - airAcceleration;
+			}
 		}
 	}
 
