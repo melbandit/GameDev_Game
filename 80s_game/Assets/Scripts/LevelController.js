@@ -10,9 +10,18 @@ public var gui:GameObject;
 public var health:int = 100;
 public var lives:int = 3;
 
+private var die:AudioSource;
+private var hurtplayer:AudioSource;
+
 private var animController:Animator;
 
 //end of model
+
+function Start (){
+	var aSources = player.GetComponents(AudioSource); 
+	die = aSources[1];
+	hurtplayer = aSources[2]; //Die
+}
 
 function Awake () {
 	player.transform.position = spawn.transform.position;
@@ -46,16 +55,9 @@ function hurtPlayer(damage:int){
 
 	if( health < 0){
 		killPlayer();
+		//hurtplayer.Stop();
+		die.Play();
 	}
-	//if(coins > 0){
-	//tell the
-//	if (health = 
-	//take points away - 5pts
-	//play hurt song
-	//hit ="true"
-	//make goodie move backwards a little
-	//disable player movement, make invulnerable for a moment  }
-	//else{die}
 }
 
 function killPlayer(){

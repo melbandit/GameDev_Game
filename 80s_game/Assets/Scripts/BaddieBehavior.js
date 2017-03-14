@@ -39,7 +39,7 @@ function OnCollisionEnter2D(other:Collision2D){
 	if(other.gameObject.tag == "Player"){
 		var rb:Rigidbody2D = other.gameObject.GetComponent("Rigidbody2D");
 		//var rbBaddie:Rigidbody2d = 
-		Debug.Log(rb.velocity.y);
+//		Debug.Log(rb.velocity.y);
 		if (rb.velocity.y > 0.01) {
 			animController.SetBool("death", true);
 			isDead = true;

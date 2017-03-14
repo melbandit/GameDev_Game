@@ -12,9 +12,9 @@ private var gameDuration:int = 180;
 function Start () {
 	scoreText.text = "0";
 
-	Debug.Log(Time.time);
+//	Debug.Log(Time.time);
 
-	Debug.Log(gameDuration);
+//	Debug.Log(gameDuration);
 
 }
 

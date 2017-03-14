@@ -14,7 +14,6 @@ public var startSpeed:float = 2;
 public var maxSpeed:float = 5;
 
 private var jump:AudioSource;
-private var die:AudioSource;
 private var hurt:AudioSource;
 
 function Start () {
@@ -33,7 +32,6 @@ function Start () {
 
 	var aSources = GetComponents(AudioSource); 
 	jump = aSources[0]; //Jump
-	die = aSources[1]; //Die
 	hurt = aSources[2]; //Hurt
 }
 
