@@ -4,12 +4,18 @@ public var scoreText:UI.Text;
 public var timeText:UI.Text;
 public var healthAmount:UI.Image;
 public var livesText:UI.Text;
+private var LC:LevelController;
 
+
+private var updatedTime:int;
 private var gameDuration:int = 180;
 
 // Time.time current time since game started in seconds
 
 function Start () {
+	var levelControllerGameObject:GameObject = gameObject.Find("Level Controller Game Object"); //find the game object
+	LC = levelControllerGameObject.GetComponent("LevelController");
+
 	scoreText.text = "0";
 
 //	Debug.Log(Time.time);
@@ -25,6 +31,11 @@ function Update () {
 //	Debug.Log(updateTime);
 
 	timeText.text = updateTime.ToString();
+
+
+	if ( updatedTime < 0 ){
+		LC.killPlayer();
+	}
 
 }
 
@@ -47,4 +58,8 @@ function newLessLives (lives:int){
 //	Debug.Log("new lives are" + lives);
 	livesText.text = lives.ToString();
 	
+}
+
+function newTime (time:int){
+	timeText.text = time.ToString();
 }

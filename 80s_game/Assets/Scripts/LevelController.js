@@ -9,6 +9,7 @@ public var force:int = 0;
 public var gui:GameObject;
 public var health:int = 100;
 public var lives:int = 3;
+public var time:int = 180;
 
 private var die:AudioSource;
 private var hurtplayer:AudioSource;
@@ -29,6 +30,16 @@ function Awake () {
 
 function Update () {
 	
+}
+
+
+function changeTime(time:int){
+
+	//Debug.Log(gui);
+
+	var guiScript:GuiView = gui.GetComponent("GuiView");
+
+	guiScript.newTime(time);
 }
 
 function changeScore(points:int){
@@ -66,7 +77,6 @@ function hurtPlayer(damage:int){
 
 function killPlayer(){
 	//animController.SetBool("alive", false);
-
 	lives--;
 	if (lives == 0) {
 //		game over!
@@ -76,6 +86,9 @@ function killPlayer(){
 
 	var guiScript:GuiView = gui.GetComponent("GuiView");
 	guiScript.newLessLives(lives);
+
+	time = 180;
+	guiScript.newTime(time);
 
 	health = 100;
 	guiScript.newHealth(health);
