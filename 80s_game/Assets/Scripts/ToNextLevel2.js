@@ -18,6 +18,6 @@ function OnTriggerEnter2D(other:Collider2D){
 	if(other.gameObject.tag == "Player"){
 		level++;
 		Application.LoadLevel("Level" + level);
-		LC.changeTime(180);
+//		LC.changeTime(180);
 	}
 }

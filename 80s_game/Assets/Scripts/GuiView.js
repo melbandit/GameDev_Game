@@ -7,15 +7,10 @@ public var livesText:UI.Text;
 private var LC:LevelController;
 
 
-private var updatedTime:int;
-private var gameDuration:int = 180;
 
 // Time.time current time since game started in seconds
 
 function Start () {
-	var levelControllerGameObject:GameObject = gameObject.Find("Level Controller Game Object"); //find the game object
-	LC = levelControllerGameObject.GetComponent("LevelController");
-
 	scoreText.text = "0";
 
 //	Debug.Log(Time.time);
@@ -26,16 +21,7 @@ function Start () {
 
 function Update () {
 
-	var updateTime:int = gameDuration - Time.time;
 
-//	Debug.Log(updateTime);
-
-	timeText.text = updateTime.ToString();
-
-
-	if ( updatedTime < 0 ){
-		LC.killPlayer();
-	}
 
 }
 
@@ -61,5 +47,6 @@ function newLessLives (lives:int){
 }
 
 function newTime (time:int){
+	Debug.Log(time);
 	timeText.text = time.ToString();
 }
